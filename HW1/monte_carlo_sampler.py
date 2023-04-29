@@ -5,8 +5,12 @@ import random
 #weight = {1: 0.3, 2: 0.6, 3: 0.1, 4: 0.8, 5: 0.4}
 
 # cnf 2
-cnf = [[-1, 3, 4], [2, 3, -4, 5], [-3, 4, -5]]
-weight = {1: 0.2, 2: 0.1, 3: 0.8, 4: 0.3, 5: 0.5}
+#cnf = [[-1, 3, 4], [2, 3, -4, 5], [-3, 4, -5]]
+#weight = {1: 0.2, 2: 0.1, 3: 0.8, 4: 0.3, 5: 0.5}
+
+# test 
+cnf = [[1,2], [-1,3], [2,-3]]
+weight = {1: 0.5, 2: 0.5, 3: 0.5}
 
 
 n_vars = max([max(sublist) for sublist in cnf])
@@ -49,3 +53,4 @@ for i in range(n):
         trues += 1
 
 print('Truth percentage:', trues/n)
+print(3/8)
